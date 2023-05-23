@@ -15,9 +15,9 @@ const Header = () => {
 				<ul>
 					<li><Link to="/">Home</Link></li>
 					<li><Link to="/period-tracker">Period Tracker</Link></li>
-					<li><Link>Workouts</Link></li>
+					<li><Link to="/workouts">Workouts</Link></li>
                     <li><Link>Blogs</Link></li>
-					<li><Link>PCOS Test</Link></li>
+					<li><Link to="/pcos">PCOS Detection</Link></li>
 				</ul>
 			</div>
 		</div>

@@ -28,6 +28,21 @@ const PeriodTracker = () => {
     return "";
   };
 
+  const calculateNextPeriod = () => {
+    if (cycles.length > 0) {
+      const lastCycle = cycles[cycles.length - 1];
+      const nextPeriodDate = new Date(lastCycle.startDate);
+      nextPeriodDate.setDate(nextPeriodDate.getDate() + lastCycle.daysSincePreviousCycle);
+      return nextPeriodDate.toLocaleDateString(undefined, {
+        weekday: "short",
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      });
+    }
+    return "";
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (startDate !== "") {
@@ -37,7 +52,7 @@ const PeriodTracker = () => {
 
   return (
     <div className="container">
-      <h1>Menstruation Tracker</h1>
+      <h1>Period Tracker</h1>
 
       <form onSubmit={handleSubmit}>
         <label htmlFor="start-date">Cycle Start Date:</label>
@@ -68,6 +83,11 @@ const PeriodTracker = () => {
           ))}
         </tbody>
       </table>
+
+      <div className="next-period">
+        <h2>Expected Next Period:</h2>
+        <p>{calculateNextPeriod()}</p>
+      </div>
     </div>
   );
 };

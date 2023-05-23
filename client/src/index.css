@@ -165,3 +165,110 @@ a:visited {
   text-decoration: none;
   color: inherit;
 }
+
+.home-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--dark-color);
+  overflow: hidden; /* Add this line */
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.title-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-color);
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.features-section {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.feature-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cta-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cta-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 20px;
+  text-align: center;
+
+}
