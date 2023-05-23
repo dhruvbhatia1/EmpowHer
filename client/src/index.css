@@ -6,22 +6,8 @@
 	--light-color: #efe3e3;
 }
 /* Set the overall height of the page */
-html,
-body {
-	height: 100%;
-}
 
-/* Set the height of the wrapper to push the footer down */
-.wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-}
 
-/* Content area (excluding the header and footer) */
-.content {
-	flex: 1;
-}
 
 body {
 	margin: 0;
@@ -234,6 +220,11 @@ a:visited {
   margin-right: 10px;
   max-width: 300px;
   text-align: center;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
 }
 
 .feature-card img {
